@@ -1,0 +1,104 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:LED D1
+U 1 1 60B4B360
+P 5400 4550
+F 0 "D1" H 5300 4350 50  0000 C CNN
+F 1 "LED" H 5450 4350 50  0000 C CNN
+F 2 "LED_THT:LED_D3.0mm_FlatTop" H 5400 4550 50  0001 C CNN
+F 3 "~" H 5400 4550 50  0001 C CNN
+	1    5400 4550
+	-1   0    0    1   
+$EndComp
+$Comp
+L Sensor_Optical:LDR07 R1
+U 1 1 60B4C7F0
+P 5000 4550
+F 0 "R1" V 4800 4650 50  0000 C CNN
+F 1 "LDR07" V 4800 4450 50  0000 C CNN
+F 2 "Connector_PinHeader_1.00mm:PinHeader_1x03_P1.00mm_Vertical" V 5175 4550 50  0001 C CNN
+F 3 "http://www.tme.eu/de/Document/f2e3ad76a925811312d226c31da4cd7e/LDR07.pdf" H 5000 4500 50  0001 C CNN
+	1    5000 4550
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R2
+U 1 1 60B4B9A6
+P 5000 4850
+F 0 "R2" V 5100 4800 50  0000 L CNN
+F 1 "1K" V 4900 4800 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" V 4930 4850 50  0001 C CNN
+F 3 "~" H 5000 4850 50  0001 C CNN
+	1    5000 4850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R3
+U 1 1 60B4C29F
+P 5400 4850
+F 0 "R3" V 5500 4800 50  0000 L CNN
+F 1 "10k" V 5300 4800 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" V 5330 4850 50  0001 C CNN
+F 3 "~" H 5400 4850 50  0001 C CNN
+	1    5400 4850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5100 5300 5000 5300
+Wire Wire Line
+	5000 5300 5000 5000
+Wire Wire Line
+	5550 4550 5550 5300
+Wire Wire Line
+	4850 4550 4850 5300
+Wire Wire Line
+	4850 5300 5000 5300
+Connection ~ 5000 5300
+$Comp
+L Connector:Conn_01x03_Male J1
+U 1 1 60B4D151
+P 5200 5100
+F 0 "J1" V 5150 5050 50  0000 L CNN
+F 1 "Conn_01x03_Male" V 5450 4800 50  0000 L CNN
+F 2 "Connector_PinHeader_1.00mm:PinHeader_1x03_P1.00mm_Vertical" H 5200 5100 50  0001 C CNN
+F 3 "~" H 5200 5100 50  0001 C CNN
+	1    5200 5100
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5400 5000 5400 5300
+Wire Wire Line
+	5300 5300 5400 5300
+Wire Wire Line
+	5400 5300 5550 5300
+Connection ~ 5400 5300
+Wire Wire Line
+	5150 4550 5200 4550
+Wire Wire Line
+	5200 4550 5200 4700
+Wire Wire Line
+	5400 4700 5200 4700
+Connection ~ 5200 4700
+Wire Wire Line
+	5200 4700 5200 5300
+Wire Wire Line
+	5000 4700 5000 4650
+Wire Wire Line
+	5000 4650 5250 4650
+Wire Wire Line
+	5250 4650 5250 4550
+$EndSCHEMATC
